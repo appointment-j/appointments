@@ -1,12 +1,12 @@
 import { useEffect } from 'react';
 import { ScreenContainer, Panel } from '../../components/ScreenContainer';
-import { Button } from '../../components/Button';
+
 import { useTranslation } from 'react-i18next';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 
 export default function BookAppointment() {
-  const { t } = useTranslation();
+  useTranslation();
   const navigate = useNavigate();
   
   // Redirect to survey-based booking flow

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { ScreenContainer, Panel } from '../../components/ScreenContainer';
 import { Card } from '../../components/Card';
-import { Input } from '../../components/Input';
+
 import { Button } from '../../components/Button';
 import api from '../../utils/api';
 import { useTranslation } from 'react-i18next';

@@ -43,7 +43,7 @@ interface Appointment {
 }
 
 export default function AdminAppointments() {
-  const { t } = useTranslation();
+  useTranslation();
   const navigate = useNavigate();
 
   const [appointments, setAppointments] = useState<Appointment[]>([]);

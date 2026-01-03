@@ -77,7 +77,7 @@ export default function SurveyAppointment() {
   const [loading, setLoading] = useState(false);
   const [selectedSlot, setSelectedSlot] = useState<any>(null);
   const [selectedMode, setSelectedMode] = useState<'IN_PERSON' | 'ONLINE' | ''>('');
-  const [nationality, setNationality] = useState('');
+
   const [surveyResponseId, setSurveyResponseId] = useState<string | null>(null);
   
   // Check if user tries to access step 3 directly
@@ -116,8 +116,6 @@ export default function SurveyAppointment() {
       const isValid = await personalForm.trigger();
       if (!isValid) return;
       
-      // Update nationality state
-      setNationality(watchedNationality);
       setStep(2);
     } else if (step === 2) {
       // Validate academic info
@@ -223,7 +221,7 @@ export default function SurveyAppointment() {
         mode: appointmentForm.getValues('mode'),
       };
       
-      const response = await api.post('/appointments/survey-book', data);
+      await api.post('/appointments/survey-book', data);
       toast.success('تم حجز الموعد بنجاح');
       navigate('/app/appointments/my');
     } catch (error: any) {
