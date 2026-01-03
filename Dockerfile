@@ -1,3 +1,6 @@
+# This Dockerfile is for the backend service
+# For the complete application setup, use docker-compose.yml
+
 FROM node:20-alpine
 
 WORKDIR /app
