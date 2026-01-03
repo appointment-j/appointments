@@ -2,7 +2,7 @@
 
 ## Prerequisites
 - Node.js 20+ installed
-- MongoDB running (or use Docker)
+- PostgreSQL running (or use Docker)
 
 ## 1. Backend Setup (5 minutes)
 
@@ -10,7 +10,7 @@
 cd backend
 npm install
 cp .env.example .env
-# Edit .env with your MongoDB URI and email settings
+# Edit .env with your PostgreSQL DATABASE_URL and email settings
 npm run seed  # Creates admin user
 npm run dev   # Starts on http://localhost:5000
 ```
@@ -94,7 +94,7 @@ docker-compose exec backend npm run seed
 
 - Configure email settings for production
 - Change JWT secrets in production
-- Set up proper MongoDB in production
+- Set up proper PostgreSQL in production
 - Configure CORS for your domain
 - Set up SSL/HTTPS
 

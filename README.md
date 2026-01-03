@@ -17,7 +17,7 @@ A complete, production-ready appointment booking system with employee bonus mana
 
 ### Backend
 - Node.js + Express + TypeScript
-- MongoDB + Mongoose
+- PostgreSQL + pg (Direct SQL queries)
 - JWT authentication with refresh tokens (httpOnly cookies)
 - Zod validation
 - Nodemailer for emails
@@ -90,7 +90,7 @@ cp .env.example .env
 ```env
 NODE_ENV=development
 PORT=5000
-MONGODB_URI=mongodb://localhost:27017/battechno-appointments
+DATABASE_URL=postgresql://postgres:your-postgres-password@localhost:5432/neondb
 JWT_SECRET=your-super-secret-jwt-key
 JWT_REFRESH_SECRET=your-super-secret-refresh-key
 JWT_ACCESS_EXPIRES_IN=15m
