@@ -1,0 +1,89 @@
+{
+  "common": {
+    "welcome": "مرحباً",
+    "login": "تسجيل الدخول",
+    "register": "التسجيل",
+    "logout": "تسجيل الخروج",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "create": "إنشاء",
+    "search": "بحث",
+    "filter": "تصفية",
+    "close": "إغلاق",
+    "confirm": "تأكيد",
+    "back": "رجوع",
+    "next": "التالي",
+    "previous": "السابق",
+    "submit": "إرسال",
+    "loading": "جاري التحميل...",
+    "error": "خطأ",
+    "success": "نجح",
+    "readMore": "اقرأ المزيد",
+    "profile": "الملف الشخصي",
+    "dontHaveAccount": "ليس لديك حساب؟",
+    "notifications": "الإشعارات",
+    "markAllAsRead": "وضع علامة على الكل كمقروء",
+    "markAsRead": "وضع علامة كمقروء",
+    "view": "عرض",
+    "viewAll": "عرض الكل",
+    "noNotifications": "لا توجد إشعارات"
+  },
+  "gate": {
+    "title": "مرحباً بك في BatTechno",
+    "subtitle": "نظام حجز المواعيد",
+    "enter": "دخول"
+  },
+  "auth": {
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "fullName": "الاسم الكامل",
+    "phone": "الهاتف",
+    "forgotPassword": "نسيت كلمة المرور؟",
+    "resetPassword": "إعادة تعيين كلمة المرور",
+    "verifyEmail": "التحقق من البريد الإلكتروني"
+  },
+  "appointments": {
+    "book": "حجز موعد",
+    "myAppointments": "مواعيدي",
+    "mode": "نوع الموعد",
+    "inPerson": "حضوري",
+    "online": "عن بعد",
+    "date": "التاريخ",
+    "time": "الوقت",
+    "note": "ملاحظة",
+    "status": "الحالة",
+    "upcoming": "قادمة",
+    "completed": "مكتمل",
+    "canceled": "ملغى",
+    "noShow": "لم يكتمل",
+    "cancel": "إلغاء الموعد",
+    "reschedule": "إعادة الجدولة"
+  },
+  "admin": {
+    "dashboard": "اللوحة",
+    "appointments": "المواعيد",
+    "history": "السجل",
+    "survey": "الاستبيان",
+    "tutorials": "الفيديوهات",
+    "blockAppointments": "حظر المواعيد",
+    "analytics": "الإحصائيات",
+    "entries": "دخول الموقع",
+    "faqs": "الأسئلة الشائعة",
+    "employees": "الموظفين",
+    "bonuses": "البونص"
+  },
+  "employee": {
+    "dashboard": "اللوحة",
+    "bonuses": "البونص",
+    "balance": "الرصيد",
+    "thisMonth": "هذا الشهر",
+    "lastBonus": "آخر بونص"
+  },
+  "faq": {
+    "title": "الأسئلة الشائعة",
+    "search": "ابحث في الأسئلة"
+  }
+}
+

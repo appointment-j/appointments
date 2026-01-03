@@ -1,0 +1,89 @@
+{
+  "common": {
+    "welcome": "Welcome",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "search": "Search",
+    "filter": "Filter",
+    "close": "Close",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "readMore": "Read More",
+    "profile": "Profile",
+    "dontHaveAccount": "Don't have an account?",
+    "notifications": "Notifications",
+    "markAllAsRead": "Mark all as read",
+    "markAsRead": "Mark as read",
+    "view": "View",
+    "viewAll": "View all",
+    "noNotifications": "No notifications"
+  },
+  "gate": {
+    "title": "Welcome to BatTechno",
+    "subtitle": "Appointment Booking System",
+    "enter": "Enter"
+  },
+  "auth": {
+    "email": "Email",
+    "password": "Password",
+    "fullName": "Full Name",
+    "phone": "Phone",
+    "forgotPassword": "Forgot Password?",
+    "resetPassword": "Reset Password",
+    "verifyEmail": "Verify Email"
+  },
+  "appointments": {
+    "book": "Book Appointment",
+    "myAppointments": "My Appointments",
+    "mode": "Appointment Type",
+    "inPerson": "In Person",
+    "online": "Online",
+    "date": "Date",
+    "time": "Time",
+    "note": "Note",
+    "status": "Status",
+    "upcoming": "Upcoming",
+    "completed": "Completed",
+    "canceled": "Canceled",
+    "noShow": "No Show",
+    "cancel": "Cancel Appointment",
+    "reschedule": "Reschedule"
+  },
+  "admin": {
+    "dashboard": "Dashboard",
+    "appointments": "Appointments",
+    "history": "History",
+    "survey": "Survey",
+    "tutorials": "Tutorials",
+    "blockAppointments": "Block Appointments",
+    "analytics": "Analytics",
+    "entries": "Site Entries",
+    "faqs": "FAQs",
+    "employees": "Employees",
+    "bonuses": "Bonuses"
+  },
+  "employee": {
+    "dashboard": "Dashboard",
+    "bonuses": "Bonuses",
+    "balance": "Balance",
+    "thisMonth": "This Month",
+    "lastBonus": "Last Bonus"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "search": "Search FAQs"
+  }
+}
+

@@ -1,0 +1,58 @@
+/* Disable CSS linter warnings for Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===============================
+   تعريف خط Majalla (اختياري)
+   إذا بدك تفعّله: تأكد المسار صحيح وحوّل للـ woff2 أفضل
+   =============================== */
+/*
+@font-face {
+  font-family: "Majalla";
+  src: url("/src/assets/fonts/Majalla.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+*/
+
+@layer base {
+  /* ✅ لا نطبق حدود على كل العناصر حتى ما يعطي إحساس رمادي عام
+     إذا بدك حدود عامة خفيفة جدًا فعّل السطر التالي:
+     * { @apply border-gray-200; }
+  */
+
+  /* ✅ Pure White خلفية إجبارية في كل التطبيق */
+  html,
+  body,
+  #root {
+    background: #ffffff !important;
+  }
+
+  body {
+    /* ✅ بدون dark */
+    @apply text-gray-900;
+    font-family: "Majalla", "Segoe UI", Tahoma, Arial, sans-serif, "Helvetica Neue",
+      "Helvetica", "Arial Unicode MS";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* RTL (عربي) */
+  [dir='rtl'] {
+    font-family: "Majalla", "Segoe UI", Tahoma, Arial, sans-serif, "Helvetica Neue",
+      "Helvetica", "Arial Unicode MS";
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
