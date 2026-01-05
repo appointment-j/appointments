@@ -60,24 +60,24 @@ const authLimiter = rateLimit({
   max: process.env.NODE_ENV === 'production' ? 200 : 10000, // higher limit for auth endpoints
 });
 
-app.use('/api/v1/auth', authLimiter);
-app.use('/api/', apiLimiter);
+app.use('/auth', authLimiter);
+app.use( apiLimiter);
 
 // Routes
-app.use('/api/v1/auth', authRoutes);
-app.use('/api/v1/entries', entryRoutes);
-app.use('/api/v1/faqs', faqRoutes);
-app.use('/api/v1/appointments', appointmentRoutes);
-app.use('/api/v1/admin/employees', employeeRoutes);
-app.use('/api/v1/admin/bonuses', bonusRoutes);
-app.use('/api/v1/employee/bonuses', employeeBonusRoutes);
-app.use('/api/v1/employee/dashboard', employeeDashboardRoutes);
-app.use('/api/v1/admin', adminDashboardRoutes);
-app.use('/api/v1/admin', adminUsersRoutes);
-app.use('/api/v1/employee/targets', employeeOnlyTargetRoutes);
-app.use('/api/v1/admin/targets', employeeTargetRoutes);
-app.use('/api/v1/employee/daily-work', employeeDailyWorkRoutes);
-app.use('/api/v1/admin/daily-work', adminDailyWorkRoutes);
+app.use('/auth', authRoutes);
+app.use('/entries', entryRoutes);
+app.use('/faqs', faqRoutes);
+app.use('/appointments', appointmentRoutes);
+app.use('/admin/employees', employeeRoutes);
+app.use('/admin/bonuses', bonusRoutes);
+app.use('/employee/bonuses', employeeBonusRoutes);
+app.use('/employee/dashboard', employeeDashboardRoutes);
+app.use('/admin', adminDashboardRoutes);
+app.use('/admin', adminUsersRoutes);
+app.use('/employee/targets', employeeOnlyTargetRoutes);
+app.use('/admin/targets', employeeTargetRoutes);
+app.use('/employee/daily-work', employeeDailyWorkRoutes);
+app.use('/admin/daily-work', adminDailyWorkRoutes);
 
 
 // Health check

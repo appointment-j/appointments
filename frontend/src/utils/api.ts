@@ -1,9 +1,10 @@
-import axios, { AxiosError, AxiosInstance, AxiosResponse } from 'axios';
+console.log('API BASE URL >>>', import.meta.env.VITE_API_URL);
+import axios, { AxiosError, AxiosResponse } from 'axios';
 
-const api: AxiosInstance = axios.create({
-  baseURL: '/api/v1',
-  withCredentials: true,
+const api = axios.create({
+  baseURL: import.meta.env.VITE_API_URL,
 });
+
 
 /**
  * Request interceptor
@@ -41,7 +42,7 @@ const processQueue = (error: any, token: string | null = null) => {
  * Refresh client (بدون interceptors لتجنب loop)
  */
 const refreshClient = axios.create({
-  baseURL: '/api/v1',
+  baseURL: import.meta.env.VITE_API_URL,
   withCredentials: true,
 });
 

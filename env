@@ -1,0 +1,30 @@
+VITE_API_URL=http://localhost:5000
+
+
+
+
+
+
+
+
+# Database Configuration
+DATABASE_URL=postgresql://neondb_owner:npg_A3h7uQvMLzKT@ep-tiny-boat-ahzhbq0r-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require
+
+# JWT Configuration
+JWT_SECRET=your-super-secret-jwt-access-token-key-here-make-it-long-and-random
+JWT_REFRESH_SECRET=your-super-secret-jwt-refresh-token-key-here-make-it-long-and-random
+
+# JWT Token Expiration (optional, defaults shown)
+JWT_ACCESS_EXPIRES_IN=15m
+JWT_REFRESH_EXPIRES_IN=7d
+
+# Server Configuration
+PORT=5000
+NODE_ENV=development
+FRONTEND_URL=http://localhost:5173
+
+# Email Configuration (for production)
+# EMAIL_HOST=smtp.gmail.com
+# EMAIL_PORT=587
+# EMAIL_USER=your-email@gmail.com
+# EMAIL_PASS=your-app-password

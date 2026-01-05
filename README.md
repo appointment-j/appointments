@@ -40,7 +40,7 @@ A complete, production-ready appointment booking system with employee bonus mana
 │   │   ├── controllers/     # Route controllers
 │   │   ├── middleware/      # Auth, error handling
 │   │   ├── models/          # Mongoose models
-│   │   ├── routes/          # API routes
+│   │   ├── routes/          #  routes
 │   │   ├── scripts/         # Seed scripts
 │   │   ├── types/           # TypeScript types
 │   │   ├── utils/           # Utilities (JWT, timezone)
@@ -168,53 +168,53 @@ After running seed script:
 ## API Endpoints
 
 ### Public
-- `POST /api/v1/entries` - Track site entry
-- `GET /api/v1/faqs` - Get active FAQs
-- `GET /api/v1/appointments/slots` - Get available slots
+- `POST /entries` - Track site entry
+- `GET /faqs` - Get active FAQs
+- `GET /appointments/slots` - Get available slots
 
 ### Auth
-- `POST /api/v1/auth/register` - Register
-- `POST /api/v1/auth/login` - Login
-- `POST /api/v1/auth/refresh` - Refresh token
-- `POST /api/v1/auth/logout` - Logout
-- `GET /api/v1/auth/verify-email` - Verify email
-- `POST /api/v1/auth/forgot-password` - Forgot password
-- `POST /api/v1/auth/reset-password` - Reset password
-- `GET /api/v1/auth/me` - Get current user
+- `POST /auth/register` - Register
+- `POST /auth/login` - Login
+- `POST /auth/refresh` - Refresh token
+- `POST /auth/logout` - Logout
+- `GET /auth/verify-email` - Verify email
+- `POST /auth/forgot-password` - Forgot password
+- `POST /auth/reset-password` - Reset password
+- `GET /auth/me` - Get current user
 
 ### Appointments (Protected)
-- `POST /api/v1/appointments` - Book appointment
-- `GET /api/v1/appointments/my` - Get my appointments
-- `POST /api/v1/appointments/:id/cancel` - Cancel appointment
-- `POST /api/v1/appointments/:id/reschedule` - Reschedule appointment
+- `POST /appointments` - Book appointment
+- `GET /appointments/my` - Get my appointments
+- `POST /appointments/:id/cancel` - Cancel appointment
+- `POST /appointments/:id/reschedule` - Reschedule appointment
 
 ### Admin
-- `GET /api/v1/appointments/admin` - Get all appointments
-- `PATCH /api/v1/appointments/admin/:id` - Update appointment status
-- `GET /api/v1/entries` - Get entries with filters
-- `GET /api/v1/faqs/admin` - Get all FAQs
-- `POST /api/v1/faqs` - Create FAQ
-- `PATCH /api/v1/faqs/:id` - Update FAQ
-- `DELETE /api/v1/faqs/:id` - Delete FAQ
-- `POST /api/v1/faqs/reorder` - Reorder FAQs
-- `GET /api/v1/admin/employees` - Get employees
-- `POST /api/v1/admin/employees` - Create employee
-- `PATCH /api/v1/admin/employees/:id` - Update employee
-- `POST /api/v1/admin/employees/:id/invite` - Invite employee
-- `POST /api/v1/admin/employees/:id/reset-password` - Reset password
-- `POST /api/v1/admin/bonuses` - Add bonus
-- `GET /api/v1/admin/bonuses` - Get bonus ledger
-- `GET /api/v1/admin/bonuses/stats` - Get bonus stats
+- `GET /appointments/admin` - Get all appointments
+- `PATCH /appointments/admin/:id` - Update appointment status
+- `GET /entries` - Get entries with filters
+- `GET /faqs/admin` - Get all FAQs
+- `POST /faqs` - Create FAQ
+- `PATCH /faqs/:id` - Update FAQ
+- `DELETE /faqs/:id` - Delete FAQ
+- `POST /faqs/reorder` - Reorder FAQs
+- `GET /admin/employees` - Get employees
+- `POST /admin/employees` - Create employee
+- `PATCH /admin/employees/:id` - Update employee
+- `POST /admin/employees/:id/invite` - Invite employee
+- `POST /admin/employees/:id/reset-password` - Reset password
+- `POST /admin/bonuses` - Add bonus
+- `GET /admin/bonuses` - Get bonus ledger
+- `GET /admin/bonuses/stats` - Get bonus stats
 
 ### Employee
-- `GET /api/v1/employee/bonuses/me` - Get my bonuses
+- `GET /employee/bonuses/me` - Get my bonuses
 
 ## Features Guide
 
 ### Entry Gate Tracking
 
 1. Visit `/` - Gate screen appears
-2. Click "Enter" - Entry is tracked via `POST /api/v1/entries`
+2. Click "Enter" - Entry is tracked via `POST /entries`
 3. Session storage set: `bt_gate_passed=1`
 4. Navigate to `/home`
 
